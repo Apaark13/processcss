@@ -1,0 +1,32 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+$background: #fff;
+$var-orange: #ff5733;
+$var-blue: #0077b6;
+$var-green: #40d39c;
+$var-tea-green: #c6fab4;
+$var-sky-blue: #b9e2f8;
+$var-pale-red: #ffc5c8;
+$var-pale-violet: #bc98cb;
+$var-soft-blue: #4799ae;
+$var-pale-cyan: #b9e7de;
+$var-pale-yellow: #fdfd96;
+
+*{
+  // font-family: '__Inter_e66fe9', '__Inter_Fallback_e66fe9';
+}
+body{
+  background: $var-tea-green;
+}
+
+div.card.nav {
+  font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+  background: $background;
+  display: flex;
+  width: calc(100vw - 40px);
+  // margin: 2px 5px;
+  padding: 5px;
+}
