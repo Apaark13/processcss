@@ -1,43 +1,18 @@
-
-function Card({ source }: any) {
+const page = () => {
   return (
-    <div className="card bg-white">
-      <a href="/">
-        <div className="card-thumbnail">
-          <img
-            src={source}
-            loading="lazy"
-            alt="Explore NeoBrutalismCSS"
-            className="card-thumbnail"
-          />
-        </div>
-        <div className="card-content">
-          <div className="text-small">January 3, 2024</div>
-          <p>
-            <strong>Explore ProcessCSS: A Revolutionary library</strong>
-          </p>
-          <p>
-            Unveil the future of NeoBrutalism with our groundbreaking approach
-            that will transform your life.
-          </p>
-          <p>
-            <strong>Learn More </strong>
-          </p>
-        </div>
-      </a>
+    <div className="flex justify-between">
+      <img src="/assets/home.png" alt="" className="w-2/5"/>
+      <div className="home-text py-16 w-3/5 px-16 text-right">
+        <h2 className="text-4xl py-4">Welcome to ProcessCSS - <br /> Your Gateway to Mastering Web Design!</h2>
+        <p>
+          Unlock the secrets of CSS and elevate your web development skills with
+          ProcessCSS. Our platform is tailor-made for learners of all levels,
+          from beginners taking their first steps to seasoned developers
+          refining their craft.
+        </p>
+      </div>
     </div>
   );
-}
-export default function Home() {
-  return (
-    <>
-    
+};
 
-      <div className="flex flex-wrap justify-evenly">
-        {Array.from({ length: 10 }).map((_, index) => (
-          <Card key={index} source={`/assets/image (${index+1}).jpeg`} />
-        ))}
-      </div>
-    </>
-  );
-}
+export default page;
