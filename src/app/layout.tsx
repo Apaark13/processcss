@@ -29,12 +29,16 @@ export default function RootLayout({
       </div>
       <div className="flex">
 
-        <button className="nb-button default rounded p-1 m-1"> <Link href="/">
+        <Link href="/">
+        <button className="nb-button default rounded p-1 m-1"> 
         Home
-        </Link> </button>
-        <button className="nb-button orange rounded p-1 m-1" > <Link href="/projects">
+        </button>
+        </Link> 
+        <Link href="/projects">
+        <button className="nb-button orange rounded p-1 m-1" > 
         Projects
-        </Link> </button>
+         </button>
+        </Link>
         <button className="nb-button pale-red rounded p-1 m-1"> About </button>
         <button className="nb-button green rounded p-1 m-1"> Contact </button>
       </div>
