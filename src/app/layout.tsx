@@ -27,20 +27,20 @@ export default function RootLayout({
       <img src="/assets/logo.png" alt="" className="w-20 px-2"/>
       <h1 className="text-2xl font-bold">ProcessCSS</h1>
       </div>
-      <div className="flex">
+      <div className="flex items-center">
 
         <Link href="/">
-        <button className="nb-button default rounded p-1 m-1"> 
-        Home
-        </button>
+        <button className="nb-button default rounded p-1 m-1"> Home</button>
         </Link> 
         <Link href="/projects">
-        <button className="nb-button orange rounded p-1 m-1" > 
-        Projects
-         </button>
+        <button className="nb-button orange rounded p-1 m-1" > Projects</button>
         </Link>
+        <Link href="/about">
         <button className="nb-button pale-red rounded p-1 m-1"> About </button>
+        </Link>
+        <Link href="/contact">
         <button className="nb-button green rounded p-1 m-1"> Contact </button>
+        </Link>
       </div>
     </div>
     {children}</body>
