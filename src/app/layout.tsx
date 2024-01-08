@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './global.scss'
 import Link from 'next/link';
+import Contact from './contact'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -16,6 +17,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  
+
   return (
     <html lang="en">
       <head>
@@ -38,12 +41,16 @@ export default function RootLayout({
         <Link href="/about">
         <button className="nb-button pale-red rounded p-1 m-1"> About </button>
         </Link>
-        <Link href="/contact">
+        <Link href="#contact">
         <button className="nb-button green rounded p-1 m-1"> Contact </button>
         </Link>
       </div>
     </div>
-    {children}</body>
+    {children}
+    <footer id='contact'>
+    {/* <Contact /> */}
+    </footer>
+    </body>
     </html>
   )
 }
