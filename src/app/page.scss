@@ -2,8 +2,15 @@
     display: flex;
     width: 80vw;
     margin: auto;
+    @media (max-width:1000px){
+        display: flex;
+        flex-direction: column;
+      }
     img{
         flex: 1;
+        @media (max-width:800px){
+            max-width: 90vw;
+          }
     }
     >.home-text{
         padding: 0 5%;
@@ -12,18 +19,31 @@
         flex-direction: column;
         justify-content: space-evenly;
         text-align: right;
-        >div h2{
-            >div{
-                font-size: 3rem;
-                font-weight: 700;
+        @media (max-width:1000px){
+            padding: 1rem;
+            text-align: center;
+          }
+          >div h2{
+              >div{
+                  font-size: 3rem;
+                  font-weight: 700;
+                }
+                font-size: 2.5rem;
+                font-weight: 600;
+                @media (max-width:1000px){
+                    font-size: 2rem;
+                    font-weight: 400;
+                    
+                  }
             }
-            font-size: 2.5rem;
-            font-weight: 600;
-        }
-        >section{
-            width: 100%;
-            display: flex;
-            justify-content: flex-end;
+            >section{
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                @media (max-width:1000px){
+                    justify-content: space-evenly;
+                    padding: 1rem 0;
+                  }
         }
     }
 }
