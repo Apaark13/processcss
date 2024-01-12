@@ -1,0 +1,29 @@
+body{
+    overflow: hidden;
+}
+.main-container{
+    margin-top: -17vh;
+    width: 100vw;
+    height: 101vh;
+    background: black;
+    padding: 12.5%;
+    
+    .img-container{
+        width: 75%;
+        height: 300px;
+        margin: auto;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        img{
+            width: 10%;
+            object-fit: cover;
+            transition: all ease 0.8s;
+            border: 5px solid rgb(255, 255, 255);
+            border-radius: 20px;
+            &:hover{
+                width: 100%;
+            }
+        }
+    }
+}
